@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>骨架屏组件 | 卞哈哈的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/Blog/logo.jpg">
+    <meta name="description" content="卞哈哈的博客">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.fdd34c18.css" as="style"><link rel="preload" href="/Blog/assets/js/app.e66d738b.js" as="script"><link rel="preload" href="/Blog/assets/js/2.24238b2e.js" as="script"><link rel="preload" href="/Blog/assets/js/13.54f574ba.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.c80a5e55.js"><link rel="prefetch" href="/Blog/assets/js/11.47d9d178.js"><link rel="prefetch" href="/Blog/assets/js/12.3f0300de.js"><link rel="prefetch" href="/Blog/assets/js/14.2c7aa398.js"><link rel="prefetch" href="/Blog/assets/js/15.eb784dae.js"><link rel="prefetch" href="/Blog/assets/js/16.beb596e7.js"><link rel="prefetch" href="/Blog/assets/js/17.3d6265d4.js"><link rel="prefetch" href="/Blog/assets/js/18.5d1461ec.js"><link rel="prefetch" href="/Blog/assets/js/19.36b3e9f3.js"><link rel="prefetch" href="/Blog/assets/js/20.42d7501d.js"><link rel="prefetch" href="/Blog/assets/js/21.ad865a67.js"><link rel="prefetch" href="/Blog/assets/js/22.940e06d9.js"><link rel="prefetch" href="/Blog/assets/js/23.9de9d26f.js"><link rel="prefetch" href="/Blog/assets/js/24.f3d0b23e.js"><link rel="prefetch" href="/Blog/assets/js/3.542f043c.js"><link rel="prefetch" href="/Blog/assets/js/4.e8c8140d.js"><link rel="prefetch" href="/Blog/assets/js/5.d9a43d11.js"><link rel="prefetch" href="/Blog/assets/js/6.6b2cbcba.js"><link rel="prefetch" href="/Blog/assets/js/7.1b971e94.js"><link rel="prefetch" href="/Blog/assets/js/8.72ae4750.js"><link rel="prefetch" href="/Blog/assets/js/9.6aab1dd1.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.fdd34c18.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><img src="/Blog/logo.jpg" alt="卞哈哈的博客" class="logo"> <span class="site-name can-hide">卞哈哈的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/Blog/pages/Components/骨架屏组件.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/Blog/pages/Utils/工具函数.html" class="nav-link">
+  工具函数
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/pages/Vue/概念.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/CSS/技巧.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Javascript/数据类型.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Electron/进程通信.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/MacBook/deploy.html" class="nav-link">
+  MacBook
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Network/WebSocket.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Bian-Zhuang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/Blog/pages/Components/骨架屏组件.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/Blog/pages/Utils/工具函数.html" class="nav-link">
+  工具函数
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/pages/Vue/概念.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/CSS/技巧.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Javascript/数据类型.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Electron/进程通信.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/MacBook/deploy.html" class="nav-link">
+  MacBook
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/pages/Network/WebSocket.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Bian-Zhuang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/pages/Components/骨架屏组件.html" class="active sidebar-link">骨架屏组件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Blog/pages/Components/轮播图组件.html" class="sidebar-link">轮播图组件</a></li><li><a href="/Blog/pages/Components/图片懒加载.html" class="sidebar-link">图片懒加载</a></li><li><a href="/Blog/pages/Components/indexDB库.html" class="sidebar-link">indexDB库</a></li><li><a href="/Blog/pages/Components/并发请求.html" class="sidebar-link">并发请求</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="骨架屏组件"><a href="#骨架屏组件" class="header-anchor">#</a> <code>骨架屏组件</code></h1> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>skeleton<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ width, height }<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ shan: animated }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 1 盒子--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>block<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ backgroundColor: bg }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 2 闪效果 skeleton 伪元素 ---&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;Skeleton&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">bg</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;#efefef&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;100px&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;100px&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">animated</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.skeleton</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token selector">.block</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.shan</span> <span class="token punctuation">{</span>
+  <span class="token selector">&amp;::after</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span> shan 1.5s ease 0s infinite<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>
+      to left<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 0<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span> 50%<span class="token punctuation">,</span>
+      <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 100%
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skewX</span><span class="token punctuation">(</span>-45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@keyframes</span> shan</span> <span class="token punctuation">{</span>
+  <span class="token selector">0%</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> -100%<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">100%</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 120%<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="props"><a href="#props" class="header-anchor">#</a> Props</h3> <table><thead><tr><th style="text-align:center;">参数</th> <th style="text-align:center;">说明</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">默认值</th></tr></thead> <tbody><tr><td style="text-align:center;">bg</td> <td style="text-align:center;">背景颜色</td> <td style="text-align:center;">String</td> <td style="text-align:center;">#efefef</td></tr> <tr><td style="text-align:center;">width</td> <td style="text-align:center;">宽度</td> <td style="text-align:center;">String</td> <td style="text-align:center;">100px</td></tr> <tr><td style="text-align:center;">height</td> <td style="text-align:center;">高度</td> <td style="text-align:center;">String</td> <td style="text-align:center;">100px</td></tr> <tr><td style="text-align:center;">animated</td> <td style="text-align:center;">是否闪烁</td> <td style="text-align:center;">Boolean</td> <td style="text-align:center;">false</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Blog/pages/Components/轮播图组件.html">
+        轮播图组件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Blog/assets/js/app.e66d738b.js" defer></script><script src="/Blog/assets/js/2.24238b2e.js" defer></script><script src="/Blog/assets/js/13.54f574ba.js" defer></script>
+  </body>
+</html>
